@@ -1,0 +1,123 @@
+.testimonial {
+    height: 720px;
+    color: #777777;
+    background: #f9f9ff;
+    border: 1px solid #f9f9ff;
+
+    .block-head {
+        @extend %block-head-shared;
+        color: #222222;
+        margin-top: 120px;
+    }
+
+    .subhead {
+        text-align: center;
+    }
+
+    .testimonial-item  {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .text-block {
+            color: #777777;
+        }
+
+    }
+
+}
+
+ .comments {
+    @extend %flex-shared;
+    margin: $center;
+    width: 1210px;
+    height: 340px;
+    justify-content: space-evenly;
+
+    .comment {
+        color: #777777;
+        width: 550px;
+        height: 220px;
+        padding-top: 0; 
+
+        .rating {
+            margin-left: 120px;
+
+            .name {
+                color: #222222;
+                font-size: 18px;
+                font-weight: 600; 
+            }
+
+            .stars {
+                a {
+                    color: #777777;
+                }
+            }
+        }
+    }
+ }
+
+
+ //////////////////////////////////MEDIA//////////////////////////////////////////////////
+
+ @media screen and (max-width: 920px) {
+    .comments {
+        height: 500px;
+        width: 920px;
+        flex-direction: column;
+
+        .comment {
+            margin: 0 auto;
+        }
+    }
+ }
+
+ @media screen and (max-width: 520px) {
+
+    .testimonial {
+        .block-head {
+            margin-top: 125px; 
+            letter-spacing: 1px;
+        }
+
+        .testimonial-item  {
+            display: block;
+        }
+
+        .text-block {
+            margin-top: 5px; 
+            margin-left: 30px; 
+        }
+
+        img {
+            padding-top: 25px;
+            padding-left: 30px;
+        }
+    }
+
+    .comments {
+        width: 470px;
+        margin-top: 60px;
+
+        .comment {
+            font-size: 12px; 
+            width: 450px;
+            height: 280px;
+            border: 1px solid red;
+
+            .rating {
+                margin-left: 30px;
+
+                h4 {
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+
+        .first-comment {
+            display: none;
+        }
+    }
+ }

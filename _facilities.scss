@@ -1,0 +1,117 @@
+$center: 0 auto;
+
+.facilities-block {
+    @extend %overlay-shared;
+    background: url("./screens/facilities_bg_dark.png");
+    height: 820px;
+
+    .title {
+        margin-bottom: 35px;  
+
+        .block-head {
+            @extend %block-head-shared;
+            color: #ffffff;
+            margin-top: 0px;
+            text-align: center;
+            padding-top: 120px;
+        }
+    }
+}    
+
+.subhead {
+    text-align: center;
+    color: #777777;
+    font-size: 14px;
+}
+
+.facilities {
+    @extend %flex-shared;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: $center;
+    width: 1200px;
+    height: 490px;
+
+    .facility {
+        border: 1px solid #777777;
+        width: 360px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .facility-info {
+        font-size: 14px;
+        padding-left: 40px; 
+    }
+
+    .facility-descr {
+        padding: 35px 0 0 30px; 
+    }
+
+    .facility-head {
+        padding-left: 20px;
+        font-weight: 600;
+        font-size: 17px; 
+        vertical-align: 7px;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+
+    .facilities-block {
+        // background: url("./screens/facilities_bg_dark.png");
+        background-color: #04091e;
+        height: 1100px;
+
+        .facilities {
+            width: auto;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: $center;
+
+            height: 750px;
+        } 
+    }     
+}
+
+@media screen and (max-width: 520px) {
+
+    .facilities-block {
+        // background: url("./screens/facilities_bg_dark.png");
+        height: 1700px;
+        width: 470px;
+
+        .title {
+            .block-head {
+                font-size: 27px; 
+                padding-top: 80px;
+            }
+        }
+    }  
+
+    .facilities {
+        width: 470px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 1480px;
+        align-items: center;
+
+        .facility {
+            width: 350px;
+            text-align: left;
+        }
+
+        .facility-info  {
+
+            padding-left: 35px;
+            padding-right: 35px;
+
+            br {
+                display: none;
+            }
+            
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+@import 'header';
+@import 'accomodation';
+@import 'footer';
+@import 'facilities';
+@import 'blog';
+@import 'testimonial';
+@import 'about-block';
+
+$center: 0 auto;
+
+%flex-shared {
+    display: flex;
+    align-items: center;
+}
+
+%overlay-shared {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+%block-head-shared {
+    // font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 12px; 
+}
+
+* {
+    outline: none;
+    color: #ffffff;
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    font-weight: bold;
+    background: #f3c300;
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

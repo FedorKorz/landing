@@ -1,0 +1,119 @@
+.accomodation-block {
+
+    text-align: center;
+    height: 745px;
+
+    .title {
+        margin: 120px 0 35px 0;
+    }
+
+    .block-head {
+        @extend %block-head-shared;
+        color: #222222;
+    }
+}
+
+.text-subhead {
+    color: #777777;
+    font-size: 14px;
+}
+
+.rooms {
+    display: flex;
+    width: 1200px;
+    margin: 60px auto 0 auto;
+    justify-content: space-evenly;
+}
+
+.room {
+    margin: 0;
+
+    .room-descrp {
+        color: #222222;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .room-price {
+        font-size: 22px;
+        color: #52c5fd; 
+    }
+
+    .room-time {
+        font-size: 13px; 
+        font-weight: 200; 
+        color: #52c5fd;    
+    }
+
+    .room-image {
+        position: relative;
+    }
+
+    .book-btn {
+        top: 210px;
+        left: 70px;
+        width: 131px;
+        height: 40px;
+        position: absolute;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .accomodation-block {
+        height: 1000px;
+        width: auto;
+    }
+
+    .rooms {
+        width: auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .accomodation-block {
+        width: 470px;
+        text-align: center;
+        height: 1745px;
+    
+        .title {
+            margin: 75px 0 35px 0;
+            letter-spacing: 0;
+
+            .text-subhead {
+                line-height: 25px;
+            }
+        }
+
+        .block-head {
+            font-size: 25px;
+        }
+    
+    }
+    
+    .rooms {
+        width: 480px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 60px auto 0 auto;
+        justify-content: space-evenly;
+
+        .room {
+            .book-btn {
+                top: 210px;
+                left: 60px;
+                width: 131px;
+                height: 40px;
+                position: absolute;
+            }
+
+            .room-image img {
+                width: 250px;
+            }
+        }
+    }
+}

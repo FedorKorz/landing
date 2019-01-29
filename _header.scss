@@ -1,0 +1,270 @@
+.container {
+    margin: 0 auto;
+    padding-top: 0px;
+    max-width: 1140px;
+    color: #777777;
+} 
+
+.booking-panel, .booking-form, .navbar  {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar {
+    height: 80px;
+    padding: 0 25px;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    .navbar-menu {
+
+        .item {
+            cursor: pointer;
+            display: inline;	
+            list-style: none;	  
+            color: #222222;
+            margin-left: 25px;
+            text-transform: uppercase;
+    
+            .link {
+                color: #777777;
+            }
+    
+            .link:hover {
+                color: #52c5fd;
+                transition: .3s;
+            }
+        }
+    }
+
+}
+
+.overlay {
+    @extend %overlay-shared;
+    background: url("./screens/image.png");
+}
+
+.banner {
+    text-align: center;
+    margin-top: 165px;
+
+    .banner-text {
+
+        h6 {
+            font: {
+                size: 14px;
+                weight: 300;
+            }
+            letter-spacing: 1.2px;
+        }
+
+        h2 {
+            font: {
+                size: 60px;
+                weight: 700;
+            }
+        }
+
+        button {
+            margin: 20px;
+            font-size: 14px;
+            line-height: 30px;
+            padding: 5px 25px;
+        }
+
+    }
+ 
+}
+
+.container-booking {
+    width: 1140px;
+    height: 130px;
+    background: #04091e;
+    display: flex;
+    margin: 170px auto 0 auto;
+    justify-content: space-evenly;
+    padding-top: 20px;
+
+    h2 {
+        line-height: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.booking-panel {
+    width: 810px;
+    height: 100px;
+    flex-wrap: wrap; 
+    align-items: center;
+
+    .booking-form  {
+        flex: auto;
+        width: 235px;
+        height: 35px;
+        margin: 0 15px 0 15px;
+
+        background: #04091e; 
+        border: 1px solid #777777;
+
+        .input-item {
+            width: 220px;
+            background: none;
+            border: none;
+        }
+
+        .btn {
+            width: 238px;
+            height: 35px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    ul {
+        padding: 0px;
+    }
+
+    header .navbar {
+        padding: 0;
+        .navbar-menu .item {  
+            margin-left: .5px;
+            text-transform: uppercase;
+    
+            .link {
+                color: #777777;
+                font-size: 11px;
+            }
+    
+            .link:hover {
+                color: #52c5fd;
+                transition: .3s;
+            }
+        }
+    }
+
+    .booking-panel {
+        width: 600px;
+        height: 100px;
+        flex-wrap: wrap; 
+        align-items: center;
+    
+        .booking-form  {
+            width: 100px;
+    
+            .input-item {
+                width: 50px;
+                background: none;
+                border: none;
+                font-size: 9px;
+            }
+    
+            .btn {
+                width: 238px;
+                height: 35px;
+            }
+    
+        }
+    }
+
+    .container-booking {
+        width: 630px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h2 {
+        margin: 0;
+        padding-left: 50px;
+    }
+ 
+}
+
+@media screen and (max-width: 550px) {
+    header .navbar {
+        height: 60px;
+
+        .navbar-menu .item {
+            display: none;
+        }
+    }
+
+    .container-booking {
+        display: block;
+        width: auto;
+        height: 420px;
+
+        h2 {
+            margin: 0;
+            text-transform: uppercase;
+            padding-left: 30px; 
+            padding-top: 30px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+    }
+
+    .banner {
+        margin-top: 220px;
+        text-align: center;
+        margin-bottom: 240px;
+    
+        .banner-text {
+
+            h6 {
+                padding-top: 13px; 
+                letter-spacing: 1.2px;
+                font: {
+                    size: 15px;
+                }
+            }
+
+            h2 {
+                line-height: 0px;
+                font: {
+                    size: 40px;
+                    weight: 700;
+                }
+            }
+
+            p {
+                line-height: 30px;
+                font-size: 14px;
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .booking-panel {
+        width: 470px;
+        height: 300px;
+        flex-direction: column;
+
+        .booking-form  {
+            width: 422px;
+            margin-right: 0; 
+            margin-left: 0;
+            margin-top: 10px;
+            justify-content: space-around;
+    
+            .input-item {
+                background: none;
+                border: none;
+            }
+    
+            .btn {
+                width: 450px;
+                height: 40px;
+            }
+    
+        }
+    }
+}
+
+
+
+  
